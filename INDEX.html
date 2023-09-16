@@ -1,0 +1,517 @@
+<html>
+
+<head>
+	<title>BOOK BAR</title>
+	<style>
+		.head1 {
+			font-size: 40px;
+			color: #170099;
+			font-weight: bold;
+		}
+
+		.head2 {
+			font-size: 17px;
+			margin-left: 10px;
+			margin-bottom: 15px;
+		}
+
+		body {
+			margin: 0 auto;
+			background-position: center;
+			background-size: contain;
+		}
+		.menu {
+			top: 0;
+			background-color: black;
+			padding: 0px 10px 0px 10px;
+			color: white;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+
+		.menu a {
+		    display: inline-block;
+			float: left;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 20px;
+		
+		}
+		
+		.menu-log {
+			right: auto;
+			float: right;
+			padding: 2px 0 0 0;
+			background-color: white;
+			 border-radius: 50%;
+		}
+		.dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+ 
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.bookpage {
+            display: grid;
+            grid-gap: 12px;
+            grid-template-columns: 325px 325px 325px 325px;
+            grid-template-rows: auto auto auto auto;
+			margin: 7px;
+
+
+        }
+		.bf1 {
+            background-image: url(https://m.media-amazon.com/images/I/71PNGYHykrL._AC_UF1000,1000_QL80_.jpg);
+            height: 75vh;
+            background-size: cover;
+            display: block;
+			}
+		.bb1 {
+            background-image: url(https://m.media-amazon.com/images/I/81QpzHbJxQL._AC_UF1000,1000_QL80_.jpg);
+            height: 70vh;
+            background-size: cover;
+            display: none;
+			}
+	    .bf2 {
+            background-image: url(https://i.pinimg.com/564x/cb/1d/3a/cb1d3ae938e0596d6be50bf3ef9caa2d.jpg);
+            height: 75vh;
+            background-size: cover;
+            display: block;
+			}
+		.bb2 {
+            background-image: url(https://m.media-amazon.com/images/I/815wvjrMo-L._AC_UF1000,1000_QL80_.jpg);
+            height: 70vh;
+            background-size: cover;
+            display: none;
+			}
+		
+		.bf3 {
+            background-image: url(https://m.media-amazon.com/images/I/91868k2+gUL._AC_UF1000,1000_QL80_.jpg);
+            height: 75vh;
+            background-size: cover;
+            display: block;
+			}
+		.bb3 {
+            background-image: url(https://m.media-amazon.com/images/I/91gAvZfSmJL._AC_UF894,1000_QL80_.jpg);
+            height: 70vh;
+            background-size: cover;
+            display: none;
+			}	
+		.bf4 {
+            background-image: url(https://m.media-amazon.com/images/I/817tHNcyAgL._AC_UF1000,1000_QL80_.jpg);
+            height: 75vh;
+            background-size: cover;
+            display: block;
+			}
+		.bb4 {
+            background-image: url(https://m.media-amazon.com/images/I/71-1-bG89CL._AC_UF1000,1000_QL80_.jpg);
+            height: 70vh;
+            background-size: cover;
+            display: none;
+			}	
+		.bf5 {
+            background-image: url(https://m.media-amazon.com/images/I/81WBJQUEFsL._AC_UF1000,1000_QL80_.jpg);
+            height: 75vh;
+            background-size: cover;
+            display: block;
+			}
+		.bb5 {
+            background-image: url(https://m.media-amazon.com/images/I/618jV7LOY4L._AC_UF1000,1000_QL80_.jpg);
+            height: 70vh;
+            background-size: cover;
+            display: none;
+			}	
+		
+		.bf6 {
+            background-image: url(https://m.media-amazon.com/images/I/81cAi-RIjcL._AC_UF1000,1000_QL80_.jpg);
+            height: 75vh;
+            background-size: cover;
+            display: block;
+			}
+		.bb6 {
+            background-image: url(https://www.bibdsl.co.uk/imagegallery2/bds/201743/9780241335437_1.JPG);
+            height: 70vh;
+            background-size: cover;
+            display: none;
+			}	
+		.bf7 {
+            background-image: url(https://m.media-amazon.com/images/I/81s0B6NYXML._AC_UF1000,1000_QL80_.jpg);
+            height: 75vh;
+            background-size: cover;
+            display: block;
+			}
+		.bb7 {
+            background-image: url(https://m.media-amazon.com/images/I/81cVyTFon4L._AC_UF1000,1000_QL80_.jpg);
+            height: 70vh;
+            background-size: cover;
+            display: none;
+			}	
+		.bf8 {
+            background-image: url(https://m.media-amazon.com/images/I/91nTClkODkL._AC_UF1000,1000_QL80_.jpg);
+            height: 75vh;
+            background-size: cover;
+            display: block;
+			}
+		.bb8 {
+            background-image: url(https://m.media-amazon.com/images/I/91R1lC3DVNL._AC_UF1000,1000_QL80_.jpg);
+            height: 70vh;
+            background-size: cover;
+            display: none;
+			}	
+		.bf9 {
+            background-image: url(https://m.media-amazon.com/images/I/614SwlZNtJL._AC_UF1000,1000_QL80_.jpg);
+            height: 75vh;
+            background-size: cover;
+            display: block;
+			}
+		.bb9 {
+            background-image: url(https://m.media-amazon.com/images/I/814I0bGjkWL._AC_UF1000,1000_QL80_.jpg);
+            height: 70vh;
+            background-size: cover;
+            display: none;
+			}	
+		.bf10 {
+            background-image: url(https://m.media-amazon.com/images/I/61xbLRk5vKL._AC_UF1000,1000_QL80_.jpg);
+            height: 75vh;
+            background-size: cover;
+            display: block;
+			}
+		.bb10 {
+            background-image: url(https://m.media-amazon.com/images/I/81SKSnbpYeL._AC_UF1000,1000_QL80_.jpg);
+            height: 70vh;
+            background-size: cover;
+            display: none;
+			}	
+		.bf11 {
+            background-image: url(https://m.media-amazon.com/images/I/61TO6Iv-RtL._AC_UF1000,1000_QL80_.jpg);
+            height: 75vh;
+            background-size: cover;
+            display: block;
+			}
+		.bb11 {
+            background-image: url(https://m.media-amazon.com/images/I/81CZkM14GGL._AC_UF1000,1000_QL80_.jpg);
+            height: 70vh;
+            background-size: cover;
+            display: none;
+			}	
+		.bf12 {
+            background-image: url(https://m.media-amazon.com/images/I/710rIVUnZ3L._AC_UF1000,1000_QL80_.jpg);
+            height: 75vh;
+            background-size: cover;
+            display: block;
+			}
+		.bb12 {
+            background-image: url(https://m.media-amazon.com/images/I/71V9pWGuY-L._AC_UF1000,1000_QL80_.jpg);
+            height: 70vh;
+            background-size: cover;
+            display: none;
+			}
+	    .option {
+            font-size: 30px;
+            display: none;
+            position: relative;
+            border: 2px solid grey;
+
+
+            left: 100px;
+
+            margin-top: 40px;
+
+
+        }
+
+        .notice {
+
+            font-weight: 900;
+
+
+        }
+		.bro:hover>.back {
+            display: block;
+        }
+
+        .bro:hover>.front {
+            display: none;
+        }
+
+        .bro:hover>.option {
+            display: inline-block;
+        }
+		 nav ul li:hover {
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+
+
+
+
+
+.insta1 {
+            height: 20px;
+            display: inline-block;
+            background-image: url(https://cdn-icons-png.flaticon.com/512/87/87390.png);
+            position: relative;
+            width: 25px;
+            background-size: contain;
+            z-index: 1;
+            background-repeat: no-repeat;
+            left: 590px;
+            margin: 0px 4px;
+            top: 3px;
+			}
+
+        .instagram {
+            display: inline-block;
+        }
+
+        .call {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 900;
+            position: relative;
+            left: 570px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .fac1 {
+            height: 30px;
+            display: inline-block;
+            background-image: url(https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-facebook-512.png);
+            position: relative;
+            width: 40px;
+            background-size: contain;
+            z-index: 1;
+            background-repeat: no-repeat;
+            left: 590px;
+            margin: 0 4px;
+            top: 7px;
+        }
+
+        .twit1 {
+            height: 20px;
+            display: inline-block;
+            background-image: url(https://cdn-icons-png.flaticon.com/512/81/81609.png);
+            position: relative;
+            width: 28px;
+            background-size: contain;
+            z-index: 1;
+            background-repeat: no-repeat;
+            left: 590px;
+            margin: 0px 4px;
+            top: 3px;
+
+
+        }
+
+
+        /* .contact{background-color: aqua;
+            } */
+
+		footer {
+			width: 100%;
+			bottom: 0px;
+			background-color: #000;
+			color: #fff;
+			
+			padding-top: 0px;
+			padding-bottom: 0px;
+			text-align: center;
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		.body_sec {
+			margin-left: 20px;
+		}
+		
+	</style>
+</head>
+
+<body>
+
+	<!-- Header Section -->
+	<header>
+		<div class="head1"><center>
+		<img src="LOGO DESIGN.jpg" 
+		width="auto" height="auto" >	
+		</div>
+		<div class="head2"><center>
+			<b><i>A Portal to a new world</i></b>
+		</div>
+	</header>
+
+	<!-- Menu Navigation Bar -->
+	<nav class="menu">
+		<a href="INDEX.html">HOME</a>
+		<a href="#books">BOOKS</a>
+		<div class="dropdown">
+    <button class="dropbtn">WRITERS
+     </button>
+    <div class="dropdown-content">
+	
+     <a href="colleenhoover.html">Colleen Hoover</a>
+     <a href="johngreen.html">John Green</a>
+	 <a href="collins.html">Suzzane Collins </a>
+	 <a href="jkrowling.html">J.K Rowling</a>
+    </div>
+  </div> 
+		<a href="contact.html">CONTACT</a>
+		<div class="menu-log">
+			<a href="login.html"><abbr title = "LOGIN"><img
+                            src="https://img.icons8.com/fluency-systems-regular/344/user.png"width="30px"
+                            height="18px"></abbr></a>
+		</div>
+	</nav>
+	<!-- Body section -->
+		 <p><marquee behavior="alternate" scrollamount="4"  > 
+        <img src="https://i.pinimg.com/564x/62/71/ca/6271caf2cd1ab5782380b35535b2ec06.jpg" width="400px" height="621px" >
+		<img src="https://i.pinimg.com/564x/cb/1d/3a/cb1d3ae938e0596d6be50bf3ef9caa2d.jpg" width="400px" height="auto">
+		<img src="https://i.pinimg.com/564x/c0/05/4f/c0054fb5f56db11a20f2b7b40faff942.jpg" width="400px" height="621px">
+		<img src="https://i.pinimg.com/564x/3e/1e/f3/3e1ef30e8f0c7777e71a9e88f5e6d518.jpg" width="400px" height="621px">
+		<img src="https://i.pinimg.com/564x/84/44/52/844452e7df8e222d8bd8d0c0ed6be72d.jpg" width="400px" height="621px" >
+		<img src="https://i.pinimg.com/564x/27/0e/e2/270ee2617dbbe31d1d07a503e39516eb.jpg" width="400px" height="621px" >
+    </marquee></p> 
+	<Section id="books"><h1><center><b>BOOKS</center></h1>
+	<div class="bookpage">
+	    
+         
+		<a class="bro" href="login.html">
+            <div class="front bf8"></div>
+            <div class="back bb8"></div>
+            <div class="notice">LOOKING FOR ALASKA <br> BY JOHN GREEN<br>Rs.255</div>
+            <div class="option">BUY NOW</div>
+        </a>
+		
+		<a class="bro" href="login.html">
+            <div class="front bf4"></div>
+            <div class="back bb4"></div>
+            <div class="notice">THE FAULT IN OUR STARS <br> BY JOHN GREEN<br>Rs.255</div>
+            <div class="option">BUY NOW</div>
+        </a>
+		<a class="bro" href="login.html">
+            <div class="front bf5"></div>
+            <div class="back bb5"></div>
+            <div class="notice">PAPER TOWNS <br> BY JOHN GREEN<br>Rs.255</div>
+            <div class="option">BUY NOW</div>
+        </a>
+		
+		<a class="bro" href="login.html">
+            <div class="front bf6"></div>
+            <div class="back bb6"></div>
+            <div class="notice">TURTLES ALL THE WAY DOWN <br> BY JOHN GREEN<br>Rs.255</div>
+            <div class="option">BUY NOW</div>
+        </a>
+		<a class="bro" href="login.html">
+            <div class="front bf1"></div>
+            <div class="back bb1"></div>
+            <div class="notice">IT STARTS WITH US <br> BY COLLEEN HOOVER<br>Rs.219</div>
+            <div class="option">BUY NOW</div>
+        </a>
+		<a class="bro" href="login.html">
+            <div class="front bf2"></div>
+            <div class="back bb2"></div>
+            <div class="notice">UGLY LOVE <br> BY COLLEEN HOOVER<br>Rs.249</div>
+            <div class="option">BUY NOW</div>
+        </a>
+		<a class="bro" href="login.html">
+            <div class="front bf3"></div>
+            <div class="back bb3"></div>
+            <div class="notice"> VERITY <br> BY COLLEEN HOOVER <br>Rs.249</div>
+            <div class="option">BUY NOW</div>
+        </a>
+		<a class="bro" href="login.html">
+            <div class="front bf7"></div>
+            <div class="back bb7"></div>
+            <div class="notice"> IT ENDS WITH US <br> BY COLLEEN HOOVER <br>Rs.219</div>
+            <div class="option">BUY NOW</div>
+        </a>
+		<a class="bro" href="login.html">
+            <div class="front bf9"></div>
+            <div class="back bb9"></div>
+            <div class="notice"> THE HUNGER GAMES <br> BY SUZANNE COLLINS<br>Rs.465</div>
+            <div class="option">BUY NOW</div>
+        </a>
+		<a class="bro" href="login.html">
+            <div class="front bf10"></div>
+            <div class="back bb10"></div>
+            <div class="notice">CATCHING FIRE <br> BY SUZANNE COLLINS<br>Rs.465</div>
+            <div class="option">BUY NOW</div>
+        </a>
+		<a class="bro" href="login.html">
+            <div class="front bf11"></div>
+            <div class="back bb11"></div>
+            <div class="notice">MOCKINGJAY <br> BY SUZANNE COLLINS<br>Rs.465</div>
+            <div class="option">BUY NOW</div>
+        </a>
+		<a class="bro" href="login.html">
+            <div class="front bf12"></div>
+            <div class="back bb12"></div>
+            <div class="notice">THE BALLAD OF SONGBIRDS AND SNAKES <br> BY SUZANNE COLLINS<br>Rs.465</div>
+            <div class="option">BUY NOW</div>
+        </a>
+		
+		
+		</div>
+	</section>
+	<div class="contact">
+        <div class="call">FOLLOW US :</div>
+        <a class="instagram" href="">
+            <div class="insta1"></div>
+        </a>
+        <a class="facebook" href="">
+            <div class="fac1"></div>
+        </a>
+        <a class="twitter" href="">
+            <div class="twit1"></div>
+        </a>
+
+    </div>
+	
+    <!-- Footer Section -->
+	 <footer> <img src="footer.png" width="100%" height="auto" ></footer>
+	
+</body>
+
+</html>
+</html>
